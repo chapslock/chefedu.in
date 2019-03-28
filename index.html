@@ -8,39 +8,44 @@
     <title>Registration Form</title>
     <!-- Bootstrap -->
 	<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
-	
-  
 </head>
 <body>	
 <style>
-	
-	.jumbotron:hover {
-  background-color: powderblue;
+	.jumbotron:hover 
+	{
+          background-color: powderblue;
 	}
-	
-	.carousel-inner img {
-      width: 100%;
-      height: 100%;		
-  }
+	.carousel-inner img 
+	{
+          width: 100%;
+          height: 100%;		
+        }
 	.carousel-control-next-icon
 	{
 	    color: powderblue;
 	}
 	.carousel-control-prev-icon
 	{
-		color: powderblue;
-		
+		color: powderblue;	
 	}
 	.headmd
 	{
             padding-bottom: 150px;
 	}
 	
-	
+	div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: background 2s, transform 2s;
+            }
+
+          div:hover {
+           background: blue;
+               transform: rotate(180deg);
+            }
 	</style>
 <!-- START PAGE SOURCE -->
-
-  
    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
    <a class="navbar-brand img-fluid img-thumbnail figure-img" style="background-color: #c9d1d5 "><img src="css/images/Logo2.bmp"  width="170" height="70" alt="Chefedu"><span class="embed-responsive " ><sub class="align-content-md-center" style="font-size-adjust: auto">Learn | Success | Profit &gt; &gt; Education</sub></span></a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,38 +75,28 @@
          </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-		  
          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		
          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		 
       </form>
-	   
 	   <ul>
 		   <li class="list-group"><a class="text-info"> Contact For </a></li>
 	   <a href="#">
 				<img src="css/images/soc2.gif" height="40" width="55" class="btn btn-outline-info" alt=""/>
-			</a>
-		   
+			</a>   
 		   <a href="#">
 				<img src="css/images/soc3.gif" height="40" width="55" class="btn btn-outline-info" alt="" />
 			</a>
 	   </ul>
       </div>
 </nav>
-	
 <hr class="headmd">
-	
-
 <div id="demo" class="carousel slide" data-ride="carousel">
-
   <!-- Indicators -->
   <ul class="carousel-indicators">
     <li data-target="#demo" data-slide-to="0" class="active"></li>
     <li data-target="#demo" data-slide-to="1"></li>
     <li data-target="#demo" data-slide-to="2"></li>
   </ul>
-  
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -114,7 +109,6 @@
       <img src="c.png" alt="Python programming">
     </div>
   </div>
-  
   <!-- Left and right controls -->
   <a class="carousel-control-prev" href="#demo" data-slide="prev">
     <span class="carousel-control-prev-icon"></span>
@@ -123,9 +117,7 @@
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
-
-	<div class="jumbotron">
-		
+	<div class="jumbotron">	
 	  <h1 class="display-3">Welcome in Chefedu!</h1>
 	  <p class="lead">"Today’s reader can be a tomorrow’s leader in Development." - Chefedu...&nbsp; &nbsp; </p>
 	  <p>It is help to provide education in online and offline as simple as possible. Because things about when and what you learn need to do with that information after the courses is finished and design around that so it should be better it most effective, sucessful professionals and constantly working.
@@ -148,9 +140,6 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.0.0.js"></script>
 	<script src="js/js_Sliderimg.js">
-	
-		
-	
 	</script>
 </body>
 </html>
