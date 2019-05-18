@@ -7,43 +7,49 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <!-- Bootstrap -->
-	<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
-	
-  
+	<link href="css/bootstrap-4.0.0.css" rel="stylesheet">	
 </head>
 <body>	
 <style>
-	
-	.jumbotron:hover {
-  background-color: powderblue;
-	}
-	
-	.carousel-inner img {
-      width: 100%;
-      height: 100%;		
-  }
+	.jumbotron:hover{background-color: powderblue;}
+	.carousel-inner img {width: 100%;height: 100%;}
 	.carousel-control-next-icon
-	{
-	    color: powderblue;
+	.carousel-control-prev-icon{color: powderblue;}
+	 p.copy{text-align: center;font-stretch:extra-condensed;}
+	h1.centerl{text-align: center;}	
+	.jumbotron {padding: 15px;}
+	.carousel-inner{display: run-in;position: relative;margin-top: 140px;} 
+   @media only screen and (max-width: 600px) 
+   {
+	.jumbotron {padding: 25px;}
+	.carousel-inner{display: run-in;position: relative;margin-top: 100px;}
+	 sub.goal{display: none;}
+	 h1.centerl{text-align: center;text-indent: inherit; font-size: 10vw;}
+   }   
+	 @media only screen and (max-width: 374px) 
+   {
+	.jumbotron {padding: 35px;}
+	img.g1{display: none}
+	a.g1{display: none}
+	.carousel-inner{display: run-in;position: relative;margin-top: 40px;}
+	 h1.centerl{text-align: center;text-indent: inherit; font-size: 10vw;}
 	}
-	.carousel-control-prev-icon
-	{
-		color: powderblue;
-		
-	}
-	.z
-	{
-	padding =50%;
-	}
-	
 	</style>
 <!-- START PAGE SOURCE -->
 
   
    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-   <a class="navbar-brand img-fluid img-thumbnail figure-img" style="background-color: #c9d1d5 "><img src="css/images/Logo2.bmp"  width="170" height="70" alt="Chefedu"><span class="embed-responsive " ><sub class="align-content-md-center" style="font-size-adjust: auto">Learn | Success | Profit &gt; &gt; Education</sub></span></a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	   <span ><a class="navbar-brand" href="#">Chefedu...</a></span>
+   <a class="navbar-brand img-fluid img-thumbnail figure-img g1 " style="background-color: #c9d1d5 ">
+	   <img class="top g1" src="css/images/Logo2.bmp" width="170" height="70" alt="Chefedu">
+	   <span class="embed-responsive " >
+		   <sub class="align-content-md-center goal" style="font-size-adjust: auto" >Learn | Success | Profit &gt; &gt; Education
+		   </sub>
+	   </span>
+	   </a>
+   <button class="navbar-toggler" type="button:active" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	   <span>
+		   <a class="navbar-brand" href="#">Chefedu...</a>
+	   </span>
    </button>
    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
@@ -88,9 +94,10 @@
 	   </ul>
       </div>
 </nav>
-	
-	<hr class=" z" style="padding-bottom:calc(15% - 1em)">
-<div id="demo" class="carousel slide" data-ride="carousel">
+	 <hr class="z">
+   <div class="jumbotron">
+		
+	   <div id="demo" class="carousel slide" data-ride="carousel">
 
   <!-- Indicators -->
   <ul class="carousel-indicators">
@@ -102,13 +109,13 @@
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="a.png" alt="Los Angeles">
+      <img src="a.png" alt="Chefedu" href ="#" >
     </div>
     <div class="carousel-item">
-      <img src="b.jpg" alt="Chicago">
+      <img src="b.jpg" alt="Unity"  href ="#">
     </div>
     <div class="carousel-item">
-      <img src="c.png" alt="New York">
+      <img src="c.png" alt="Python" href ="#">
     </div>
   </div>
   
@@ -120,15 +127,12 @@
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
-	
-
-	<div class="jumbotron">
-		
-		  <h1 class="display-3">Welcome in Chefedu!</h1>
+	  
+	  <h1 class="display-3 centerl">Welcome in Chefedu!</h1>
 	  <p class="lead">"Today’s reader can be a tomorrow’s leader in Development." - Chefedu...&nbsp; &nbsp; </p>
-	  <p>It is help to provide education in online and offline as simple as possible. Because things about when and what you learn need to do with that information after the courses is finished and design around that so it should be better it most effective, sucessful professionals and constantly working.
+	  <p class = "copy">It is help to provide education in online and offline as simple as possible. Because things about when and what you learn need to do with that information after the courses is finished and design around that so it should be better it most effective, sucessful professionals and constantly working.
 	  We are providing such education before just matter of time like Related courses are such as Python Development of entire course and Web Devlopment using Html and Mostly Unity 2D and 3D game devlopment then also provide other feature Shown in list :-
-		</p>
+	 </p>
 		<ul class="list-group">
   <li class="list-group-item">Easy to learning experiences</li>
   <li class="list-group-item">Easy to afford in Price of each course</li>
@@ -152,5 +156,4 @@
 	</script>
 </body>
 </html>
-	
 	
